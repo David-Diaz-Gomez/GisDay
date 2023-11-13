@@ -2,7 +2,9 @@ from arcgis.geocoding import geocode
 from arcgis.gis import GIS
 import csv
 
-gis = GIS(api_key="AAPK6dbc98774eea4b54a0e5053458c853a7_JJsyqzpWMnLI2pLC4QhHijixbvTGX0rLjHcDPa8XCGBT9oDIPgrXL-anVMgh9gF")
+api_key = getpass.getpass(prompt='Ingresa tu API Key de ArcGIS: ')
+
+gis = GIS(apikey=api_key)
 
 csv_file = "C:/Users/dgdia/OneDrive/Documentos/GisDay/prueba.csv"  
 
